@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazon page</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgb(234, 237, 237);
+        margin: 0;
+      }
+
+      main {
+        margin-left: 30px;
+        margin-right: 30px;
+      }
+
+      #logo {
+        width: 110px;
+      }
+      #header {
+        background-color: rgb(34, 47, 62);
+        padding-left: 25px;
+        padding-top: 8px;
+        padding-bottom: 10px;
+        margin-bottom: 0%;
+      }
+      #nav {
+        background-color: rgb(53, 71, 88);
+        color: white;
+        padding-left: 35px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        margin-bottom: 5px;
+      }
+
+      #nav span {
+        margin-right: 10px;
+      }
+
+      #undernav {
+        color: white;
+        background-color: rgb(239, 102, 55);
+        text-align: center;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        margin-top: 32px;
+        margin-bottom: 32px;
+      }
+
+      #backgroundimage {
+        background-image: url(./Pics/bg-image.png);
+        width: 100%;
+        height: 195px;
+        text-align: center;
+      }
+
+      h1 {
+        color: white;
+        padding-top: 65px;
+        padding-bottom: 5px;
+      }
+      #text {
+        color: white;
+        font-weight: bold;
+        padding-bottom: 20px;
+      }
+      .section {
+        font-size: large;
+        background-color: white;
+        padding-top: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 20px;
+        margin-top: 35px;
+        margin-bottom: 35px;
+      }
+      .section p a {
+        padding-left: 15px;
+      }
+      .section p {
+        margin-left: 25px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+      }
+      #articles {
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+
+      #articles img {
+        width: 300px;
+        height: 56vh;
+        margin-left: 20px;
+        margin-right: 15px;
+        object-fit: cover;
+        border-radius: 15px;
+        -webkit-box-shadow: 0px 10px 13px -7px #000000,
+          15px 16px 39px -9px rgba(0, 0, 0, 0.6);
+        box-shadow: 0px 10px 13px -7px #000000,
+          15px 16px 39px -9px rgba(0, 0, 0, 0.6);
+      }
+
+      .article2 {
+        margin-bottom: 25px;
+      }
+      .shopping {
+        width: 100%;
+        object-fit: cover;
+      }
+
+      .article2 p {
+        text-align: center;
+        font-size: large;
+        margin-top: 2px;
+      }
+      .article2 p a {
+        padding-left: 15px;
+      }
+
+      #box-align {
+        margin-right: 53%;
+      }
+      .extra-section {
+        width: 290px;
+        height: 400px;
+        display: inline-block;
+        background-color: white;
+        padding-left: 30px;
+        margin-bottom: 30px;
+      }
+
+      .extra-section img {
+        object-fit: cover;
+        width: 100px;
+        aspect-ratio: 1/1;
+      }
+
+      .extra-section a {
+        display: inline-block;
+        margin-top: 30px;
+      }
+      .selection-container {
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+        padding-right: 30px;
+        padding-left: 10px;
+        padding-bottom: 30px;
+      }
+      .selection-container p {
+        margin-top: 1px;
+        margin-bottom: 1px;
+      }
+      #elements-positioning {
+        position: relative;
+      }
+      .positioning {
+        position: absolute;
+        left: 355px;
+        right: 100px;
+        top: 0px;
+        bottom: 0px;
+      }
+      .positioning2 {
+        position: absolute;
+        right: 355px;
+        left: 700px;
+        top: 0px;
+        bottom: 0px;
+      }
+      .positioning3 {
+        position: absolute;
+        left: 1050px;
+        right: 30px;
+        top: 0px;
+        bottom: 0px;
+      }
+      .rednew {
+        position: relative;
+      }
+      #red-top {
+        position: absolute;
+        width: 50px;
+        left: 115px;
+        top: 130px;
+        bottom: 0px;
+        right: 0px;
+      }
+      #red-top2 {
+        position: absolute;
+        width: 50px;
+        left: 115px;
+        top: 130px;
+        bottom: 0px;
+        right: 0px;
+      }
+      #red-bottom {
+        position: absolute;
+        width: 50px;
+        left: 255px;
+        top: 260px;
+        bottom: 0px;
+        right: 0px;
+      }
+
+      #overfooter a {
+        color: white;
+      }
+      #overfooter {
+        background-color: rgb(53, 71, 88);
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+      }
+      #footer img {
+        width: 13%;
+        object-fit: cover;
+        padding-left: 44%;
+        padding-right: 43%;
+      }
+      #footer {
+        background-color: rgb(34, 47, 62);
+        padding-top: 60px;
+        padding-bottom: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <img id="logo" src="./Pics/logo.png" alt="Amazon logo" />
+    </div>
+
+    <div id="nav">
+      <span>All</span><span> Today's deals</span><span> Customer Service</span
+      ><span>Registry</span><span> Gift Cards</span><span>Sell</span>
+    </div>
+
+    <main>
+      <p id="undernav">Shop All Holiday Gift Cards</p>
+      <div id="backgroundimage">
+        <h1>Holiday gift guides</h1>
+        <p id="text">Be a go-gifter</p>
+      </div>
+
+      <div class="section">
+        <p>
+          Find the perfect gift <a href="https://www.amazon.it/">Shop now</a>
+        </p>
+        <div id="articles">
+          <img src="./Pics/img_1.jpg" alt="Tablet" />
+          <img src="./Pics/img_2.jpg" alt="Accessori" />
+          <img src="./Pics/img_3.jpg" alt="Orologi" />
+          <img src="./Pics/img_4.jpg" alt="Animali" />
+        </div>
+      </div>
+      <div class="article2">
+        <img class="shopping" src="./Pics/img_9.png" alt="vr visor" />
+        <p>
+          Play the gifting game
+          <a href="https://www.amazon.it/videogiochi/b/?ie=UTF8&node=412603031"
+            >Shop gaming</a
+          >
+        </p>
+      </div>
+      <div class="article2">
+        <img class="shopping" src="./Pics/img_10.png" alt="Speaker" />
+        <p>
+          The sound of cheer
+          <a href="https://www.amazon.it/music/unlimited"
+            >Shop Audio & Accessories</a
+          >
+        </p>
+      </div>
+      <div id="elements-positioning">
+        <div id="box-align" class="extra-section">
+          <h3>Gaming accessories</h3>
+          <div class="selection-container">
+            <img src="./Pics/img_15.jpg" alt="Headset" />
+            <p>Headsets</p>
+          </div>
+          <div class="selection-container">
+            <img src="./Pics/img_16.jpg" alt="Keyboard" />
+            <p>Keyboards</p>
+          </div>
+          <div class="selection-container">
+            <img src="./Pics/img_17.jpg" alt="Mouse" />
+            <p>Computer Mice</p>
+          </div>
+          <div class="selection-container">
+            <img src="./Pics/img_18.jpg" alt="Gaming chair" />
+            <p>Chairs</p>
+          </div>
+          <a href="https://www.amazon.it/">See more</a>
+        </div>
+        <div class="extra-section positioning">
+          <h3>Comfy styles</h3>
+          <div class="selection-container">
+            <div>
+              <img class="rednew" src="./Pics/img_19.jpg" alt="Sweatshirts" />
+              <img id="red-top" src="./Pics/new.png" alt="New" />
+            </div>
+            <p>Sweatshirts</p>
+          </div>
+          <div class="selection-container">
+            <img src="./Pics/img_20.jpg" alt="Joggers" />
+            <p>Joggers</p>
+          </div>
+          <div class="selection-container">
+            <img src="./Pics/img_21.jpg" alt="Cardigans" />
+            <p>Cardigans</p>
+          </div>
+          <div class="selection-container">
+            <div>
+              <img class="rednew" src="./Pics/img_22.jpg" alt="Easy tees" />
+              <img id="red-bottom" src="./Pics/new.png" />
+            </div>
+            <p>Easy tees</p>
+          </div>
+          <a href="https://www.amazon.it/">See more</a>
+        </div>
+        <div class="extra-section positioning2">
+          <h3>Holiday Gifts</h3>
+          <div class="selection-container">
+            <div>
+              <img class="rednew" src="./Pics/img_11.jpg" alt="Electronics" />
+              <img id="red-top2" src="./Pics/new.png" />
+            </div>
+            <p>Electronics</p>
+          </div>
+          <div class="selection-container">
+            <img src="./Pics/img_12.jpg" alt="Fashion" />
+            <p>Fashion</p>
+          </div>
+          <div class="selection-container">
+            <img src="./Pics/img_13.jpg" alt="Toys" />
+            <p>Toys</p>
+          </div>
+          <div class="selection-container">
+            <img src="./Pics/img_14.jpg" alt="Beauty" />
+            <p>Beauty</p>
+          </div>
+          <a href="https://www.amazon.it/">Shop all gift guides</a>
+        </div>
+        <div class="extra-section positioning3">
+          <h3>Add joy to their wish list</h3>
+          <div class="selection-container">
+            <img src="./Pics/img_24.jpg" alt="Holiday toy list" />
+            <p>Holiday toy list</p>
+          </div>
+          <div class="selection-container">
+            <img src="./Pics/img_25.jpg" alt="Electronic Gifts" />
+            <p>Electronic Gifts</p>
+          </div>
+          <div class="selection-container">
+            <img src="./Pics/img_26.jpg" alt="Home Gifts" />
+            <p>Home Gifts</p>
+          </div>
+          <div class="selection-container">
+            <img src="./Pics/img_27.jpg" alt="Fashion Gifts" />
+            <p>Fashion Gifts</p>
+          </div>
+          <a href="https://www.amazon.it/">Shop all gift guides</a>
+        </div>
+      </div>
+    </main>
+
+    <div id="overfooter"><a href="#undernav">Back to top</a></div>
+    <div id="footer">
+      <img src="./Pics/logo.png" alt="logo" />
+    </div>
+  </body>
+</html>
