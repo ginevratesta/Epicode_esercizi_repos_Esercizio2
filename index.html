@@ -119,28 +119,31 @@
         padding-left: 15px;
       }
 
-      #box-align {
-        margin-right: 53%;
-      }
       .extra-section {
         width: 290px;
         height: 400px;
         display: inline-block;
+        vertical-align: bottom;
         background-color: white;
-        padding-left: 30px;
-        margin-bottom: 30px;
+        padding-left: 20px;
+        margin-bottom: 50px;
+        margin-top: 20px;
       }
 
-      .extra-section img {
+      .extra-section .imgbox {
         object-fit: cover;
-        width: 100px;
+        width: 110px;
         aspect-ratio: 1/1;
       }
 
-      .extra-section a {
+      .extra-section .bottomlink {
         display: inline-block;
-        margin-top: 30px;
+        margin-top: 25px;
       }
+      .box-align {
+        margin-left: 40px;
+      }
+
       .selection-container {
         width: 100px;
         height: 100px;
@@ -151,36 +154,14 @@
       }
       .selection-container p {
         margin-top: 1px;
-        margin-bottom: 1px;
+        margin-bottom: 30px;
+        font-size: small;
       }
-      #elements-positioning {
-        position: relative;
-      }
-      .positioning {
-        position: absolute;
-        left: 355px;
-        right: 100px;
-        top: 0px;
-        bottom: 0px;
-      }
-      .positioning2 {
-        position: absolute;
-        right: 355px;
-        left: 700px;
-        top: 0px;
-        bottom: 0px;
-      }
-      .positioning3 {
-        position: absolute;
-        left: 1050px;
-        right: 30px;
-        top: 0px;
-        bottom: 0px;
-      }
+
       .rednew {
         position: relative;
       }
-      #red-top {
+      .red-top {
         position: absolute;
         width: 50px;
         left: 115px;
@@ -188,14 +169,7 @@
         bottom: 0px;
         right: 0px;
       }
-      #red-top2 {
-        position: absolute;
-        width: 50px;
-        left: 115px;
-        top: 130px;
-        bottom: 0px;
-        right: 0px;
-      }
+
       #red-bottom {
         position: absolute;
         width: 50px;
@@ -273,95 +247,104 @@
           >
         </p>
       </div>
-      <div id="elements-positioning">
-        <div id="box-align" class="extra-section">
+      <div>
+        <div class="extra-section">
           <h3>Gaming accessories</h3>
           <div class="selection-container">
-            <img src="./Pics/img_15.jpg" alt="Headset" />
+            <img class="imgbox" src="./Pics/img_15.jpg" alt="Headset" />
             <p>Headsets</p>
           </div>
           <div class="selection-container">
-            <img src="./Pics/img_16.jpg" alt="Keyboard" />
+            <img class="imgbox" src="./Pics/img_16.jpg" alt="Keyboard" />
             <p>Keyboards</p>
           </div>
           <div class="selection-container">
-            <img src="./Pics/img_17.jpg" alt="Mouse" />
+            <img class="imgbox" src="./Pics/img_17.jpg" alt="Mouse" />
             <p>Computer Mice</p>
           </div>
           <div class="selection-container">
-            <img src="./Pics/img_18.jpg" alt="Gaming chair" />
+            <img class="imgbox" src="./Pics/img_18.jpg" alt="Gaming chair" />
             <p>Chairs</p>
           </div>
-          <a href="https://www.amazon.it/">See more</a>
+          <a class="bottomlink" href="https://www.amazon.it/">See more</a>
         </div>
-        <div class="extra-section positioning">
+        <div class="extra-section box-align rednew">
           <h3>Comfy styles</h3>
           <div class="selection-container">
-            <div>
-              <img class="rednew" src="./Pics/img_19.jpg" alt="Sweatshirts" />
-              <img id="red-top" src="./Pics/new.png" alt="New" />
-            </div>
+            <img class="imgbox" src="./Pics/img_19.jpg" alt="Sweatshirts" />
+            <img class="red-top" src="./Pics/new.png" alt="New" />
+
             <p>Sweatshirts</p>
           </div>
           <div class="selection-container">
-            <img src="./Pics/img_20.jpg" alt="Joggers" />
+            <img class="imgbox" src="./Pics/img_20.jpg" alt="Joggers" />
             <p>Joggers</p>
           </div>
           <div class="selection-container">
-            <img src="./Pics/img_21.jpg" alt="Cardigans" />
+            <img class="imgbox" src="./Pics/img_21.jpg" alt="Cardigans" />
             <p>Cardigans</p>
           </div>
           <div class="selection-container">
-            <div>
-              <img class="rednew" src="./Pics/img_22.jpg" alt="Easy tees" />
-              <img id="red-bottom" src="./Pics/new.png" />
-            </div>
+            <img class="imgbox" src="./Pics/img_22.jpg" alt="Easy tees" />
+            <img id="red-bottom" src="./Pics/new.png" />
+
             <p>Easy tees</p>
           </div>
-          <a href="https://www.amazon.it/">See more</a>
+          <a class="bottomlink" href="https://www.amazon.it/">See more</a>
         </div>
-        <div class="extra-section positioning2">
+        <div class="extra-section box-align rednew">
           <h3>Holiday Gifts</h3>
           <div class="selection-container">
-            <div>
-              <img class="rednew" src="./Pics/img_11.jpg" alt="Electronics" />
-              <img id="red-top2" src="./Pics/new.png" />
-            </div>
+            <img class="imgbox" src="./Pics/img_11.jpg" alt="Electronics" />
+            <img class="red-top" src="./Pics/new.png" />
+
             <p>Electronics</p>
           </div>
           <div class="selection-container">
-            <img src="./Pics/img_12.jpg" alt="Fashion" />
+            <img class="imgbox" src="./Pics/img_12.jpg" alt="Fashion" />
             <p>Fashion</p>
           </div>
           <div class="selection-container">
-            <img src="./Pics/img_13.jpg" alt="Toys" />
+            <img class="imgbox" src="./Pics/img_13.jpg" alt="Toys" />
             <p>Toys</p>
           </div>
           <div class="selection-container">
-            <img src="./Pics/img_14.jpg" alt="Beauty" />
+            <img class="imgbox" src="./Pics/img_14.jpg" alt="Beauty" />
             <p>Beauty</p>
           </div>
-          <a href="https://www.amazon.it/">Shop all gift guides</a>
+          <a class="bottomlink" href="https://www.amazon.it/"
+            >Shop all gift guides</a
+          >
         </div>
-        <div class="extra-section positioning3">
+        <div class="extra-section box-align">
           <h3>Add joy to their wish list</h3>
           <div class="selection-container">
-            <img src="./Pics/img_24.jpg" alt="Holiday toy list" />
+            <img
+              class="imgbox"
+              src="./Pics/img_24.jpg"
+              alt="Holiday toy list"
+            />
             <p>Holiday toy list</p>
           </div>
           <div class="selection-container">
-            <img src="./Pics/img_25.jpg" alt="Electronic Gifts" />
+            <img
+              class="imgbox"
+              src="./Pics/img_25.jpg"
+              alt="Electronic Gifts"
+            />
             <p>Electronic Gifts</p>
           </div>
           <div class="selection-container">
-            <img src="./Pics/img_26.jpg" alt="Home Gifts" />
+            <img class="imgbox" src="./Pics/img_26.jpg" alt="Home Gifts" />
             <p>Home Gifts</p>
           </div>
           <div class="selection-container">
-            <img src="./Pics/img_27.jpg" alt="Fashion Gifts" />
+            <img class="imgbox" src="./Pics/img_27.jpg" alt="Fashion Gifts" />
             <p>Fashion Gifts</p>
           </div>
-          <a href="https://www.amazon.it/">Shop all gift guides</a>
+          <a class="bottomlink" href="https://www.amazon.it/"
+            >Shop all gift guides</a
+          >
         </div>
       </div>
     </main>
